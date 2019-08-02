@@ -1,0 +1,38 @@
+{
+  "name": "local-hubspot-dev",
+  "version": "1.0.0",
+  "description": "Test project for local Hubspot development",
+  "main": "index.js",
+  "author": "Teun Rutten & Linsey Brander",
+  "license": "MIT",
+  "scripts": {
+    "clean:dist": "rm -rf dist && mkdir dist",
+    "build": "yarn clean:dist && yarn build:gulp && yarn build:webpack",
+    "build:webpack": "webpack",
+    "build:gulp": "gulp build",
+    "release": "standard-version && git push --follow-tags && git push && git push --tags",
+    "hubspot:auth": "npx hscms auth oauth2",
+    "hubspot:sync": "npx hscms sync dist public",
+    "deploy": "yarn build && yarn hubspot:sync"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-hash": "^4.2.2",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob-import": "^0.1.0",
+    "node-sass": "^4.12.0",
+    "require-dir": "^1.2.0",
+    "standard-version": "^7.0.0",
+    "webpack": "^4.39.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "raven-js": "^3.27.2"
+  }
+}
