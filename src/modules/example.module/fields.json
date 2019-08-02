@@ -1,0 +1,186 @@
+[ {
+  "name" : "settings",
+  "label" : "Settings",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "name" : "squeeze",
+    "label" : "Breedte",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "default", "Standaard (900px)" ], [ "s", "Extra Klein (600px)" ], [ "m", "Middel (850px)" ], [ "l", "Groot (1060px)" ], [ "xl", "Extra groot (1150px)" ], [ "xml", "Extra medium groot (1200px)" ], [ "xxl", "Enorm (1300px)" ], [ "none", "Volledige breedte (1440px)" ] ],
+    "type" : "choice",
+    "default" : "none"
+  }, {
+    "name" : "padding",
+    "label" : "Padding",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "name" : "top",
+      "label" : "Top",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "Geen" ], [ "s", "Klein" ], [ "m", "Middel" ], [ "l", "Groot" ], [ "xl", "Extra groot" ], [ "xxl", "Enorm" ], [ "xxxl", "Extra enorm" ], [ "xxxxl", "Maximaal" ] ],
+      "type" : "choice",
+      "default" : "none"
+    }, {
+      "name" : "bottom",
+      "label" : "Bottom",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "none", "Geen" ], [ "s", "Klein" ], [ "m", "Middel" ], [ "l", "Groot" ], [ "xl", "Extra groot" ], [ "xxl", "Enorm" ], [ "xxxl", "Extra enorm" ], [ "xxxxl", "Maximaal" ] ],
+      "type" : "choice",
+      "default" : "none"
+    } ],
+    "type" : "group",
+    "default" : {
+      "top" : "none",
+      "bottom" : "none"
+    }
+  }, {
+    "name" : "mobile_padding",
+    "label" : "Mobile padding",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "name" : "top",
+      "label" : "Top",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "desktop", "Desktop instellingen" ], [ "none", "Geen" ], [ "s", "Klein" ], [ "m", "Middel" ], [ "l", "Groot" ], [ "xl", "Extra groot" ], [ "xxl", "Enorm" ], [ "xxxl", "Extra enorm" ], [ "xxxxl", "Maximaal" ] ],
+      "type" : "choice",
+      "default" : "desktop"
+    }, {
+      "name" : "bottom",
+      "label" : "Bottom",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "desktop", "Desktop instellingen" ], [ "none", "Geen" ], [ "s", "Klein" ], [ "m", "Middel" ], [ "l", "Groot" ], [ "xl", "Extra groot" ], [ "xxl", "Enorm" ], [ "xxxl", "Extra enorm" ], [ "xxxxl", "Maximaal" ] ],
+      "type" : "choice",
+      "default" : "desktop"
+    } ],
+    "type" : "group",
+    "default" : {
+      "top" : "desktop",
+      "bottom" : "desktop"
+    }
+  }, {
+    "name" : "colors",
+    "label" : "Colors",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "name" : "background",
+      "label" : "Background",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "white", "Wit" ], [ "black", "Zwart" ], [ "gray", "Grijs" ] ],
+      "type" : "choice",
+      "default" : "black"
+    }, {
+      "name" : "text",
+      "label" : "Text",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "black", "Zwart" ], [ "white", "Wit" ], [ "gray", "Grijs" ] ],
+      "type" : "choice",
+      "default" : "white"
+    } ],
+    "type" : "group",
+    "default" : {
+      "background" : "black",
+      "text" : "white"
+    }
+  } ],
+  "type" : "group",
+  "default" : {
+    "squeeze" : "none",
+    "padding" : {
+      "top" : "none",
+      "bottom" : "none"
+    },
+    "mobile_padding" : {
+      "top" : "desktop",
+      "bottom" : "desktop"
+    },
+    "colors" : {
+      "background" : "black",
+      "text" : "white"
+    }
+  }
+}, {
+  "name" : "cards",
+  "label" : "Cards",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "name" : "icon",
+    "label" : "Icon",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "discover", "Discover" ], [ "discover-yellow", "Discover yellow" ], [ "lamp", "Create" ], [ "rocket", "Grow" ], [ "rocket-yellow", "Grow yellow" ], [ "path", "Pad" ], [ "coins", "Munten" ], [ "solar", "Solar" ], [ "love", "Love" ], [ "infinite", "Infinite" ], [ "dart", "Dart" ], [ "analytics", "Analytics" ], [ "castle", "Castle" ], [ "content", "Content" ], [ "digital-marketing", "Digital marketing" ], [ "cogs", "Cogs" ], [ "meetings", "Meetings" ], [ "support", "Support" ], [ "drinks", "Drinks" ], [ "brain", "Brain" ], [ "football", "Football" ], [ "hamburger", "Hamburger" ], [ "office", "Office" ], [ "team", "Team" ], [ "laptop", "Laptop" ], [ "map", "Map" ], [ "share", "Share" ], [ "blijvend", "Blijvend" ], [ "gestroomlijnd", "Gestroomlijnd" ], [ "holistisch", "Holistisch" ], [ "inzichtelijk", "Inzichtelijk" ], [ "relevant", "Relevant" ] ],
+    "type" : "choice",
+    "default" : "discover"
+  }, {
+    "name" : "title",
+    "label" : "Titel",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : null
+  }, {
+    "name" : "content",
+    "label" : "Content",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "type" : "richtext",
+    "default" : null
+  } ],
+  "type" : "group",
+  "default" : {
+    "icon" : "discover"
+  }
+}, {
+  "name" : "content",
+  "label" : "Content",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "type" : "richtext",
+  "default" : null
+} ]

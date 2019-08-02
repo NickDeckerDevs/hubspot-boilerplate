@@ -69,3 +69,57 @@ This boilerplate handles the building and deploying of JavaScript, CSS and Hubsp
 - Templates are not created locally, you have to create 'Drag and drop' templates in the 'Design Tools' of Hubspot
 - You have to connect the `main.css` and `main.js` files to every template you create
 
+## Icons
+***
+
+Hubspot doesn't allow the upload of SVG files in Design Tools. That's why this boilerplate includes an `Icons` module. The `src/modules/icons.module/module.html` file contains a SVG of all icons in `src/icons`. Add the `Icons` module in the 'Header' section of every template. That way you can use icons like:
+
+```
+<svg>
+  <use href="#example" xlink:href="#example"></use>
+</svg>
+```
+
+You can add your SVG icons to `src/icons`. Combining SVG and adding them to the `Icons` module is handled by Gulp.
+
+## Developing new modules
+
+Use the command `yarn hubspot:module <name> src/modules` to create a new module. This will create a new folder in the modules folder. This folder contains the following files:
+
+```
+/fields.json
+/meta.json
+/module.css
+/module.html
+/module.js
+```
+
+You should never edit the `module.css` and `module.js` files of a module. We only use the `src/js` folder and `src/scss` folder to edit css and javascript.
+
+### Settings
+
+Every module contains a `meta.json` file. This file contains properties with settings for the Hubspot module:
+
+```
+{
+  "css_assets": [ ],
+  "external_js": [ ],
+  "global": true,
+  "help_text": "",
+  "host_template_types": [ "PAGE" ],
+  "js_assets": [ ],
+  "other_assets": [ ],
+  "smart_type": "NOT_SMART",
+  "tags": [ ],
+  "is_available_for_new_content": true
+}
+
+```
+
+To be able to use the new module in the Hubspot templates you should edit the `meta.json` file and change `is_available_for_new_content` to `true`.
+If you need a global module, you can edit the property `global` and set it to `true`.
+
+### Fields
+
+The module also contains a `fields.json`  file. This file contains all the fields a Hubspot user can edit to change the content of the module. There is also a `meta.json` file that contains settings for all fields. You can find a lot of info in [Modules JSON](https://github.com/bradhave94/HubSpot/wiki/Custom-Modules-JSON)
+

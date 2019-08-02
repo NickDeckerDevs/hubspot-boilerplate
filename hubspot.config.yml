@@ -1,6 +1,6 @@
-defaultPortal: 'DEV'
+defaultPortal: DEV
 portals:
-  - name: 'DEV'
+  - name: DEV
     portalId: 6223912
     authType: oauth2
     auth:
@@ -9,7 +9,7 @@ portals:
       scopes:
         - content
       tokenInfo:
-        expiresAt: '2019-08-02T11:56:48.454Z'
+        expiresAt: '2019-08-02T17:27:45.673Z'
         refreshToken: a2aa1aed-8041-444c-b787-47c3c2e21c66
         accessToken: >-
-          CLvei5TFLRICAgEYqPD7AiDdg7sDKOuZDDIZALv9fyHADopWceiaebF2DQ9fJMlfV1S-tzoQADEAQf8HAAAAAIAAAGB4z0IZALv9fyH-8CzeHRAlzUPR6oxSSxYXZzoTAg
+          CIfdx53FLRICAgEYqPD7AiDdg7sDKOuZDDIZACCEVZ9QuedFZshL70jRaTeMt5543i_8qzoQADEAQf8HAAAAAIAAAGB4z0IZACCEVZ9jN7692Hi6YMN5Yvlknsrv844lMA
