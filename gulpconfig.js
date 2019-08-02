@@ -8,7 +8,7 @@ var config = {
     modules: 'dist/modules'
   },
   src: {
-    scss: 'src/styles/main.scss',
+    scss: 'src/scss/main.scss',
     modules: 'src/modules/**/*'
   }
 }
