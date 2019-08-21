@@ -1,0 +1,15 @@
+{
+  "name" : "icon",
+  "label" : "Icon",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ 
+    [ "discover", "Discover" ],
+    [ "create", "Create" ], 
+    [ "grow", "Grow" ]
+  ],
+  "type" : "choice",
+  "default" : "discover"
+}

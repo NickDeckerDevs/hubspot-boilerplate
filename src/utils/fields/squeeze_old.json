@@ -1,0 +1,20 @@
+{
+  "name" : "squeeze_old",
+  "label" : "Breedte (Oud)",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ 
+    [ "default", "Standaard (900px)" ], 
+    [ "xs", "Extra Klein (600px)" ], 
+    [ "s", "Klein (850px)" ], 
+    [ "m", "Middel (1060px)" ], 
+    [ "l", "Groot (1150px)" ], 
+    [ "xl", "Extra groot (1200px)" ], 
+    [ "xxl", "Enorm (1300px)" ], 
+    [ "none", "Volledige breedte (1400px)" ] 
+  ],
+  "type" : "choice",
+  "default" : "none"
+}

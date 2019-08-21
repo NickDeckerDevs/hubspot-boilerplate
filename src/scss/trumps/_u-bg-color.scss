@@ -1,0 +1,41 @@
+.u-bg-color {
+  &--none {
+    background-color: transparent;
+  }
+  &--white {
+    background-color: $white;
+  }
+  &--white-gray {
+    background-color: $white-gray;
+  }
+  &--light-gray {
+    background-color: $light-gray;
+  }
+  &--gray {
+    background-color: $gray;
+  }
+  &--text-gray {
+    background-color: $text-gray;
+  }
+  &--dark-gray {
+    background-color: $dark-gray;
+  }
+  &--almost-black {
+    background-color: $almost-black;
+  }
+  &--black {
+    background-color: $black;
+  }
+  &--yellow {
+    background-color: $yellow;
+  }
+  &--light-blue {
+    background-color: $light-blue;
+  }
+  &--blue {
+    background-color: $blue;
+  }
+  &--red {
+    background-color: $red;
+  }
+}

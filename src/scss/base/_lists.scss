@@ -1,0 +1,55 @@
+/**
+ * (Un)ordered Lists
+ *
+ * @since 1.0.0
+ */
+
+ul,
+ol {
+  list-style-position: inside;
+  margin: 0 0 1.5rem 1.5rem;
+  padding: 0;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: disc;
+
+  &.checks {
+    list-style-type: none;
+    margin-left: 0;
+
+    & > li {
+      position: relative;
+      margin-left: 0;
+      padding-left: 1.5rem;
+      background-image: url('https://cdn2.hubspot.net/hubfs/248909/bb_theme_images/check-yellow.svg');
+      background-position: left 3px;
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0; //reset
+  margin-top: .5rem;
+  margin-left: 1.5rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5rem 1.5rem;
+}

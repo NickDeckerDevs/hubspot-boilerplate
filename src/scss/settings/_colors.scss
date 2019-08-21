@@ -1,0 +1,42 @@
+/**
+ * Colors
+ *
+ * @since 1.0.0
+ */
+
+$black: #000;
+$white: #fff;
+
+$white-gray: #F5F5F5;
+$light-gray: #DDDDDD;
+$gray: #848484;
+$text-gray: #6E6E6E;
+$dark-gray: #2C2A2A;
+
+$almost-black: #212020;
+$nearly-black: #0F0F0F;
+$blue-black: #292C30;
+
+$yellow: #F2C135;
+$blue: #5B91A7;
+$light-blue: rgbs(#5B91A7, .35);
+$red: #D56E67;
+
+$error: #df840e;
+$success: #98bd78;
+
+$primary-color: $yellow;
+$secondary-color: $blue;
+$primary-font-color: $blue-black;
+
+$header-box-shadow: 0 3px 40px rgba($black, .05);
+
+// forms
+$checkbox: $gray;
+$input-border: $white-gray;
+$input-background: $white-gray;
+$input-color: $primary-font-color;
+$input-disabled: $light-gray;
+$input-focus: $light-gray;
+$input-placeholder: $primary-font-color;
+$radio: $gray;

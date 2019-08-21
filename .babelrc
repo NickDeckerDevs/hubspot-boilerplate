@@ -8,6 +8,7 @@
           "browsers": "> 2%"
         }
       }
-    ]
+    ],
+    ["@babel/preset-react"]
   ]
 }

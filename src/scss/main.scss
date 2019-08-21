@@ -1,1 +1,46 @@
+/**
+ * Settings
+ */
+@import 'settings/*';
+
+/**
+ * Tools
+ */
+@import 'tools/functions/*';
+@import 'tools/mixins/*';
+@import 'tools/keyframes/*';
+ 
+/**
+ * Generic
+ */
+@import 'generic/*';
+ 
+/**
+ * Base
+ */
+@import 'base/*';
+ 
+/**
+ * Objects
+ */
+@import 'objects/*';
+ 
+/**
+ * Components
+ */
 @import 'components/*';
+@import 'components/page-header/*';
+@import 'components/tablet-header/*';
+@import 'components/mobile-header/*';
+@import 'components/page-footer/*';
+@import 'components/image-slider/*';
+@import 'components/video/*';
+@import 'components/hs-forms/*';
+@import 'components/clients/*';
+@import 'components/double-cta/*';
+ 
+/**
+ * Trumps
+ */
+@import 'trumps/*';
+ 

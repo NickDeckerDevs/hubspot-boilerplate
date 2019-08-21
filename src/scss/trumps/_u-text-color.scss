@@ -1,0 +1,38 @@
+.u-text-color {
+  &--white {
+    color: $white;
+  }
+  &--white-gray {
+    color: $white-gray;
+  }
+  &--light-gray {
+    color: $light-gray;
+  }
+  &--gray {
+    color: $gray;
+  }
+  &--text-gray {
+    color: $text-gray;
+  }
+  &--dark-gray {
+    color: $dark-gray;
+  }
+  &--almost-black {
+    color: $almost-black;
+  }
+  &--black {
+    color: $black;
+  }
+  &--yellow {
+    color: $yellow;
+  }
+  &--light-blue {
+    color: $light-blue;
+  }
+  &--blue {
+    color: $blue;
+  }
+  &--red {
+    color: $red;
+  }
+}

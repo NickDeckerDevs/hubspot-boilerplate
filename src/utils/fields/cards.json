@@ -1,0 +1,83 @@
+{
+  "name" : "cards",
+  "label" : "Cards",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ 
+    {
+      "name" : "icon",
+      "label" : "Icon",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "analytics", "Analytics" ],
+        [ "blijvend", "Blijvend" ], 
+        [ "brain", "Brain" ],  
+        [ "castle", "Castle" ], 
+        [ "cogs", "Cogs" ], 
+        [ "coins", "Munten" ], 
+        [ "content", "Content" ], 
+        [ "create", "Create" ], 
+        [ "dart", "Dart" ],
+        [ "digital-marketing", "Digital marketing" ], 
+        [ "discover", "Discover" ],
+        [ "drinks", "Drinks" ],
+        [ "football", "Football" ],
+        [ "gestroomlijnd", "Gestroomlijnd" ],     
+        [ "grow", "Grow" ], 
+        [ "hamburger", "Hamburger" ], 
+        [ "holistisch", "Holistisch" ],
+        [ "infinite", "Infinite" ], 
+        [ "inzichtelijk", "Inzichtelijk" ],
+        [ "laptop", "Laptop" ], 
+        [ "love", "Love" ], 
+        [ "map", "Map" ],
+        [ "meetings", "Meetings" ], 
+        [ "office", "Office" ], 
+        [ "path", "Pad" ], 
+        [ "relevant", "Relevant" ],
+        [ "share", "Share" ], 
+        [ "solar", "Solar" ], 
+        [ "support", "Support" ], 
+        [ "team", "Team" ]   
+      ],
+      "type" : "choice",
+      "default" : "discover"
+    }, 
+    {
+      "name" : "title",
+      "label" : "Titel",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : null
+    }, 
+    {
+      "name" : "content",
+      "label" : "Content",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "type" : "richtext",
+      "default" : null
+    } 
+  ],
+  "type" : "group",
+  "default" : {
+    "icon" : "discover"
+  }
+}

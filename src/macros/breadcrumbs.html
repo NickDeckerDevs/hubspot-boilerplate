@@ -1,0 +1,31 @@
+{% macro render(page, href, content, align) %}
+  {% set dCenter = (align.desktop == 'center') ? 'c-breadcrumbs--d-center' : '' %}
+  {% set mCenter = (align.mobile == 'center') ? 'c-breadcrumbs--m-center' : '' %}
+
+  <div class="c-breadcrumbs u-flex u-flex-v-center {{dCenter}} {{mCenter}}">
+    <a href="https://bureaubright.nl/" class="c-breadcrumbs__home-link" title="Home">
+      <svg class="c-icon c-breadcrumbs__home">
+        <use href="#home" xlink:href="#home"></use>
+      </svg>
+    </a>
+
+    {% if href != '' and content != '' %}
+      <div class="c-breadcrumbs__icon-container">
+        <svg class="c-icon c-breadcrumbs__icon">
+          <use href="#triangle-right" xlink:href="#triangle-right"></use>
+        </svg>
+      </div>
+
+      <a href="{{href}}" class="c-breadcrumbs__crumb c-breadcrumbs__crumb--link">{{content}}</a>
+    {% endif %}
+
+    <div class="c-breadcrumbs__icon-container">
+      <svg class="c-icon c-breadcrumbs__icon">
+        <use href="#triangle-right" xlink:href="#triangle-right"></use>
+      </svg>
+    </div>
+
+    <div class="c-breadcrumbs__crumb c-breadcrumbs__crumb--last">{{page}}</div>
+  </div>
+    
+{% endmacro %}

@@ -19,15 +19,20 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@hubspot/cms-cli": "^0.0.18",
     "babel-loader": "^8.0.6",
     "del": "^5.0.0",
+    "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
     "gulp-ext-replace": "^0.3.0",
+    "gulp-footer": "^2.0.2",
     "gulp-hash": "^4.2.2",
+    "gulp-header": "^2.0.9",
     "gulp-load-plugins": "^2.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -41,6 +46,12 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
-    "raven-js": "^3.27.2"
+    "body-scroll-lock": "^2.6.4",
+    "object-fit-images": "^3.2.4",
+    "objectFitPolyfill": "^2.3.0",
+    "raven-js": "^3.27.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "smoothscroll": "^0.4.0"
   }
 }

@@ -1,0 +1,25 @@
+.u-squeeze-old {
+  margin: 0 auto;
+  
+  &--xs {
+    max-width: rem-calc(600);
+  }
+  &--s {
+    max-width: rem-calc(850);
+  }
+  &--m {
+    max-width: rem-calc(1060);
+  }
+  &--l {
+    max-width: rem-calc(1150);
+  }
+  &--xl {
+    max-width: rem-calc(1200);
+  }
+  &--xxl {
+    max-width: rem-calc(1300);
+  }
+  &--none {
+    max-width: 100%;
+  }
+}

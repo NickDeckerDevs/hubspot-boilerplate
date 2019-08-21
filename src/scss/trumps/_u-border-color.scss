@@ -1,0 +1,38 @@
+.u-border-color {
+  &--white {
+    border-color: $white;
+  }
+  &--white-gray {
+    border-color: $white-gray;
+  }
+  &--light-gray {
+    border-color: $light-gray;
+  }
+  &--gray {
+    border-color: $gray;
+  }
+  &--text-gray {
+    border-color: $text-gray;
+  }
+  &--dark-gray {
+    border-color: $dark-gray;
+  }
+  &--almost-black {
+    border-color: $almost-black;
+  }
+  &--black {
+    border-color: $black;
+  }
+  &--yellow {
+    border-color: $yellow;
+  }
+  &--light-blue {
+    border-color: $light-blue;
+  }
+  &--blue {
+    border-color: $blue;
+  }
+  &--red {
+    border-color: $red;
+  } 
+}
