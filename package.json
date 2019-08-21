@@ -49,9 +49,8 @@
     "body-scroll-lock": "^2.6.4",
     "object-fit-images": "^3.2.4",
     "objectFitPolyfill": "^2.3.0",
+    "preact": "^8.5.2",
     "raven-js": "^3.27.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
     "smoothscroll": "^0.4.0"
   }
 }

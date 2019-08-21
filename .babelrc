@@ -1,14 +1,14 @@
 {
   "presets": [
+    // ...
+  ],
+  "plugins": [
     [
-      "@babel/preset-env",
+      "@babel/plugin-transform-react-jsx",
       {
-        "modules": false,
-        "targets": {
-          "browsers": "> 2%"
-        }
+        "pragma": "Preact.h",
+        "pragmaFrag": "Preact.Fragment"
       }
-    ],
-    ["@babel/preset-react"]
+    ]
   ]
 }
