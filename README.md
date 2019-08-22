@@ -1,12 +1,14 @@
-#Hubspot Development Boilerplate
+### This readme is still in progress, not everything is covered yet, but most of it should be self explanatory.
 
-##Credits
+# Hubspot Development Boilerplate
+
+## Credits
 
 ---
 
 This boilerplate is based on the [Hubspot Local Development Boilerplate](https://designers.hubspot.com/docs/tools/local-development). The added packages are selected by Linsey Brander & Teun Rutten.
 
-##About
+## About
 
 ---
 
@@ -15,7 +17,7 @@ This is a starter pack for developing WordPress projects. The project structure 
 - `/src` folder for all your source files,
 - `/dist` folder that is synced with Hubspot.
 
-###Features
+### Features
 
 - Gulp
 - SCSS
@@ -23,7 +25,7 @@ This is a starter pack for developing WordPress projects. The project structure 
 - Prettier & ESLint
 - Webpack (ES6)
 
-##Getting started
+## Getting started
 
 ---
 
