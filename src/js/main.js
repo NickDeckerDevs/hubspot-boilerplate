@@ -5,11 +5,16 @@
  */
 
 // import Raven from 'raven-js'
+import 'smoothscroll'
+import 'objectFitPolyfill'
+import objectFitImages from 'object-fit-images'
 
-;(function IIFE() {
+$(function() {
   if (process.env.NODE_ENV === 'production') {
     // Raven
     // .config()
     // .install()
   }
-})();
+
+  objectFitImages()
+})
